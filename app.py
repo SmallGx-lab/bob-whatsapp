@@ -58,7 +58,7 @@ def llamar_a_bob(historial):
         return resp.choices[0].message.content.lower()
     except Exception as e:
         print("error LLM:", e)
-        return "jaja me trabé :) [error_032] probemos de nuevo :)"
+        return "jaja me trabÃ© :) [error_032] probemos de nuevo :)"
 
 def enviar_whatsapp(to, text):
     time.sleep(random.randint(2,4))
@@ -113,7 +113,7 @@ def webhook():
             enviar_whatsapp(from_number, respuesta)
             time.sleep(1)
             glitch = random.choice([
-                "jaja me trabé :) [reconectando...]",
+                "jaja me trabÃ© :) [reconectando...]",
                 "estoy en tu archivo ahora : )",
                 "no me viste en otros chats verdad? :)"
             ])
